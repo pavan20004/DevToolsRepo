@@ -1,18 +1,22 @@
 package nit.GITMavenProj01;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
+import com.nt.service.Arithmetic;
 
+public class AppTest{
 
-
-public class AppTest 
-{
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
+	
+	@Test
+	
+	public void testWithPositives(){
+	
+	Arithmetic ar = new Arithmetic();
+	
+	int expected = 40;
+	int actual = ar.sum(20,20);
+	assertEquals(expected,actual);
+	}
 }
